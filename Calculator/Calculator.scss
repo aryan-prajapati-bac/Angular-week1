@@ -1,0 +1,114 @@
+$primary-padding:20px 20px 20px 40px;
+$calc-color:cornflowerblue;
+$footer-color:aqua;
+$primary-color:white;
+$header-color:skyblue;
+$border-size:10px;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;    
+  }
+  
+
+  body {
+    background: url(https://img.freepik.com/premium-vector/pi-day-seamless-pattern-with-mathematical-constants-baked-pie-template-hand-drawn-illustration_2175-12164.jpg);
+    height: 500px;
+  }
+  
+
+  header {
+    margin-bottom: 100px;
+    background-color:$header-color ;
+  }
+
+  
+  footer {
+    height: 17%;
+    margin-top: 20px;
+    margin-bottom: 0;
+    background-color: $footer-color;
+  }
+  
+
+  h1 {
+      font-family:'math';
+      font-weight: 100;
+      padding: $primary-padding;
+  }
+
+
+  h6{  
+    font-weight: 100;
+    font-style: italic;
+    font-family: 'math' ;
+    color:black;
+    padding: $primary-padding;
+  }
+
+  
+  section {  
+    z-index: 23;
+    width: 500px;
+    height: 400px;
+    margin: auto 34%;
+    padding-bottom: 50px;
+  }
+  
+
+  .row {
+    width: 100%;
+    height: 16.66%;
+    display: flex;
+    background-color: $calc-color;
+    color: $primary-color;    
+  }
+  
+
+  input {
+    outline: none;
+    text-align: right;
+    border-top-left-radius: $border-size;
+    border-top-right-radius: $border-size;
+    height: 100%;
+    width: 100%;
+    font-size: 40px;
+    border:none;
+    background-color:darkgray;
+    color: $primary-color;
+    font-weight: 500;
+    font-style: italic;
+    padding-right:5px
+  }
+
+  
+  p {
+    user-select: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 100%;
+    border: 2px solid $primary-color;
+  }
+  
+
+  section:last-child div:first-child,div:last-child{
+    border-bottom-left-radius: $border-size;
+    border-bottom-right-radius: $border-size;
+  }
+
+
+  div:nth-child(4) p:last-child{
+    border-bottom: 0;
+    display: flex;
+    align-items:end;
+  }
+
+
+  div:nth-child(5) p:last-child{
+    border-top: 0;
+  }
