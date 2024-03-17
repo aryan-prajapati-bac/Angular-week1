@@ -1,0 +1,122 @@
+$primary-padding: 1vh 1vw 2vh 1vw;
+$calc-color: cornflowerblue;
+$footer-color: aqua;
+$primary-color: white;
+$header-color: skyblue;
+$border-size: 10px;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  display: grid;
+  grid-template-rows: 8vh 85vh 7vh;
+}
+
+
+
+.header {
+  width: 100vw;
+  background-color: $header-color ;
+}
+
+
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  background-color: $footer-color;
+}
+
+
+.header-text {
+  font-family: 'math';
+  font-weight: 100;
+  padding: $primary-padding;
+}
+
+
+.footer-text {
+  font-weight: 100;
+  font-style: italic;
+  font-family: 'math';
+  color: black;
+  padding: $primary-padding
+}
+
+
+
+
+.section {
+  height: 100%;
+  background: url(https://img.freepik.com/premium-vector/pi-day-seamless-pattern-with-mathematical-constants-baked-pie-template-hand-drawn-illustration_2175-12164.jpg);
+  padding: 14vh 5vw 14vh 5vw;
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.item1 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.item2 {
+  grid-row-start: 4;
+  grid-row-end: 6;
+}
+
+
+
+
+.input {
+  outline: none;
+  text-align: right;
+  border-top-left-radius: $border-size;
+  border-top-right-radius: $border-size;
+  height: 100%;
+  width: 100%;
+  font-size: 40px;
+  border: none;
+  background-color: darkgray;
+  color: $primary-color;
+  font-weight: 500;
+  font-style: italic;
+  padding-right: 1vw;
+}
+
+
+.cell {
+  background-color: $calc-color;
+  user-select: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border: 2px solid $primary-color;
+  transition: transform 0.5s;
+
+  &:hover {
+    border: 2px solid white;
+    border-radius: 8px;
+    transform: scale(1.03);
+    background-color: green;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+  }
+}
