@@ -10,42 +10,54 @@
 </head>
 
 <body>
+    <!-- header -->
     <header class="header">
         <h1 class="header-text">Calculator</h1>
     </header>
+
+    <!-- section body -->
     <section class="section">
+
+        <!-- main calculator body -->
         <div class="main">
 
-            <input type="text" class="item1 input" id="display" readonly />
+            <!-- calculator display -->
+            <input type="text" class="input-item input" id="display" readonly />
 
 
-            <p id="7" class="cell" onclick="addTodisplay('7')">7</p>
-            <p id="8" class="cell" onclick="addTodisplay('8')">8</p>
-            <p id="9" class="cell" onclick="addTodisplay('9')">9</p>
-            <p id="del" class="cell" onclick="deleteLastElement()">DEL</p>
+            <!-- calculator cells -->
+            <p class="cell" onclick="addToDisplay('7')">7</p>
+            <p class="cell" onclick="addToDisplay('8')">8</p>
+            <p class="cell" onclick="addToDisplay('9')">9</p>
+            <p class="cell delete-cell" onclick="deleteLastElement()">DEL</p>
 
+            <p class="cell" onclick="addToDisplay('4')">4</p>
+            <p class="cell" onclick="addToDisplay('5')">5</p>
+            <p class="cell" onclick="addToDisplay('6')">6</p>
+            <p class="cell" onclick="getResult()">=</p>
 
-            <p id="4" class="cell" onclick="addTodisplay('4')">4</p>
-            <p id="5" class="cell" onclick="addTodisplay('5')">5</p>
-            <p id="6" class="cell" onclick="addTodisplay('6')">6</p>
-            <p id="equals" class="cell" onclick="getResult()">=</p>
+            <p class="cell" onclick="addToDisplay('1')">1</p>
+            <p class="cell" onclick="addToDisplay('2')">2</p>
+            <p class="cell" onclick="addToDisplay('3')">3</p>
+            <p class="cell add-symbol" onclick="addToDisplay('+')">+</p>
 
-            <p id="1" class="cell" onclick="addTodisplay('1')">1</p>
-            <p id="2" class="cell" onclick="addTodisplay('2')">2</p>
-            <p id="3" class="cell" onclick="addTodisplay('3')">3</p>
-            <p id="add" class="cell item2" onclick="addTodisplay('+')">+</p>
+            <p class="cell" onclick="addToDisplay('0')">0</p>
+            <p class="cell" onclick="addToDisplay('00')">00</p>
+            <p class="cell" onclick="addToDisplay('.')">.</p>
 
-            <p id="0" class="cell" onclick="addTodisplay('0')">0</p>
-            <p id="per" class="cell" onclick="addTodisplay('%')">%</p>
-            <p id="dot" class="cell" onclick="addTodisplay('.')">.</p>
-           
+            <p class="cell item-e" onclick="addToDisplay('e')">e</p>
+            <p class="cell" onclick="addToDisplay('/')">/</p>
+            <p class="cell" onclick="addToDisplay('*')">*</p>
+            <p class="cell" onclick="addToDisplay('-')">-</p>
 
-            <p id="AC" class="cell" onclick="getAllClear()">AC</p>
-            <p id="div" class="cell" onclick="addTodisplay('/')">/</p>
-            <p id="mul" class="cell" onclick="addTodisplay('x')">x</p>
-            <p id="sub" class="cell" onclick="addTodisplay('-')">-</p>
+            <p class="cell ac-cell" onclick="getAllClear()">AC</p>
+            <p class="cell" onclick="addToDisplay('%')">%</p>
+            <p id="previous" class="cell">Back</p>
+            <p id="next" class="cell">Next</p>
         </div>
     </section>
+
+    <!-- footer -->
     <footer class="footer">
         <h4 class="footer-text">&copy; Copyright </h4>
         <h4 class="footer-text">Designed by @Aryan</h4>

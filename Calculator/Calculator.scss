@@ -63,19 +63,25 @@ body {
 
 .main {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: repeat(4, 25%);
 }
 
-.item1 {
+.input-item {
   grid-column-start: 1;
   grid-column-end: 5;
   grid-row-start: 1;
   grid-row-end: 2;
 }
 
-.item2 {
+.item-e {
+  font-size: 25px;
+}
+
+.add-symbol {
   grid-row-start: 4;
   grid-row-end: 6;
+  grid-column-start: 4;
+  grid-column-end: 5;
 }
 
 
@@ -95,6 +101,11 @@ body {
   font-weight: 500;
   font-style: italic;
   padding-right: 1vw;
+  transition: transform 0.8s;
+
+  &:hover {
+    transform: scale(1.009);
+  }
 }
 
 
@@ -111,12 +122,26 @@ body {
   transition: transform 0.5s;
 
   &:hover {
-    border: 2px solid white;
+    box-shadow: inset 1px 1px 5px 0.3px black;
     border-radius: 8px;
-    transform: scale(1.03);
+    transform: scale(1.01);
     background-color: green;
     color: white;
     font-weight: 700;
-    font-size: 20px;
+  }
+}
+
+.delete-cell,
+.ac-cell {
+  background-color: red;
+  color: white;
+
+  &:hover {
+    border: 2px solid white;
+    border-radius: 8px;
+    transform: scale(1.03);
+    background-color: red;
+    color: white;
+    font-weight: 700;
   }
 }
